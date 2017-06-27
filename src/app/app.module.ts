@@ -1,16 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {TasklistComponent} from './tasklist.component';
+import {NewtaskComponent} from './newtask.component';
+import {RootComponent} from "./root.component";
+import {RouterModule, Routes} from "@angular/router";
+
+const appRoutes: Routes = [
+  {
+    path: 'tasks',
+    component: TasklistComponent
+  },
+  {
+    path: 'newtask',
+    component: NewtaskComponent
+  },
+  {
+    path: '',
+    redirectTo: '/tasks',
+    pathMatch: 'full'
+  }
+];
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    TasklistComponent,
+    NewtaskComponent,
+    RootComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [RootComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

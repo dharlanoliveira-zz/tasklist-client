@@ -74,10 +74,6 @@
       "check-whitespace"
     ],
     "prefer-const": true,
-    "quotemark": [
-      true,
-      "single"
-    ],
     "radix": true,
     "semicolon": [
       "always"
@@ -115,9 +111,7 @@
     ],
     "component-selector": [
       true,
-      "element",
-      "app",
-      "kebab-case"
+      "element"
     ],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,

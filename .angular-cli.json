@@ -19,7 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/bootstrap/dist/css/bootstrap-theme.css",
+        "../node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css",
+        "../node_modules/bootstrap-material-design/dist/css/ripples.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
